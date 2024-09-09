@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>Milagrerito</title>
+    <script src="./lib/CSInterface.js"></script>      
+    <script src="scripts.js"></script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');</style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+    <div class="lista-botao">
+        <div class="custom-select">
+            <div class="select-group">
+                <label for="molduraFacecam" class="titulosDivisores">Escolas</label>
+                <select name="escola" id="escola">
+                    <option value="0">Alura</option>
+                    <option value="1">Programacão</option>
+                    <option value="2">UX&Design</option>
+                    <option value="3">Mobile</option>
+                    <option value="4">InovGestão</option>
+                    <option value="5">FrontEnd</option>
+                    <option value="6">DataScience</option>
+                    <option value="7">DevOps</option>
+                    <option value="8">IA</option>
+                </select>
+            </div>
+        </div>
+        <button class="buttonLibrary" id="runButton1" type="run" onclick="importBrutes()" title="Importar">Importar Brutos</button>
+    </div>     
+
+    <div class="coluna-cojuntos">
+        <div class="duas-colunas">
+            <div class="lista-botao">
+                <div class="custom-select">
+                    <div class="select-group">
+                        <label for="molduraFacecam" class="titulosDivisores">Facecam</label>
+                        <select name="frame" id="molduraFacecam">
+                            <option value="0">16x9</option>
+                            <option value="1">1x1</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="buttonLibrary" id="runButton2" type="run" onclick="assetFC()" title="Add Facecam">OK</button>
+            </div> 
+
+            <a class="spacer">
+            <div class="titulo-e-botoes">
+                <label for="molduraFacecam" class="titulosDivisores">Vídeo</label>
+                <div class="coluna-de-botoes">
+                    <button class="botao-mais-menos" id="runButton2" type="run" onclick="addVideo()" title="Add faixa de vídeo">+</button>
+                    <button class="botao-mais-menos" id="runButton2" type="run" onclick="subVideo()" title="Remove faixa de vídeo">-</button>
+                </div>
+               <button class="botao-mais-menos2" id="runButton2" type="run" onclick="dupVideo()" title="Duplica faixa de vídeo">x2</button>
+            </div>
+        </a>
+        </div>   
+    
+        <div class="duas-colunas">
+            <div class="lista-botao">
+                <div class="custom-select">
+                    <div class="select-group">
+                        <label for="molduraFacecam" class="titulosDivisores">Autocrop</label>
+                        <select name="escola" id="autocrop">
+                            <option value="0">Vídeo 1</option>
+                            <option value="1">Vídeo 2</option>
+                            <option value="1">Vídeo 3</option>
+                            <option value="1">Vídeo 4</option>
+                            <option value="1">Vídeo 5</option>
+                        </select>
+                    
+                    </div>
+                </div>
+                <button class="buttonLibrary" id="runButton2" type="run" onclick="autoCrop()" title="Corta automaticamente">Crop</button>
+            </div> 
+    
+            <div class="titulo-e-botoes">
+                <label for="molduraFacecam" class="titulosDivisores">Áudio</label>
+                <div class="coluna-de-botoes">
+                    <button class="botao-mais-menos" id="runButton2" type="run" onclick="addAudio()" title="Add faixa de áudio">+</button>
+                    <button class="botao-mais-menos" id="runButton2" type="run" onclick="subAudio()" title="Remove Faixa de áudio">-</button>
+                </div>
+            </div>
+            
+        </div> 
+
+            <div class="lista-botao">
+                <div class="custom-select">
+                    <div class="select-group">
+                        <label for="molduraFacecam" class="titulosDivisores">Lado instrutxr</label>
+                        <select name="escola" id="ladoInst">
+                            <option value="0">Esquerda</option>
+                            <option value="1">Direita</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="buttonLibrary" id="runButton2" type="run" onclick="arrumaTela()" title="Tela">Tela</button>
+                <button class="buttonLibrary" id="runButton2" type="run" onclick="arrumaFC()" title="Facecam">FC</button>
+                <button class="buttonLibrary" id="runButton2" type="run" onclick="arrumaFS()" title="Fullscreen">FS</button>
+            </div> 
+            
+            <div class="master-copy">
+               <!-- <button class="buttonLibrary" id="runButton2" type="run" onclick="copyParam()" title="Facecam">Copy</button> -->
+               <!--  <button class="buttonLibrary" id="runButton2" type="run" onclick="pasteParam()" title="Fullscreen">Paste</button> -->
+                <!-- <button class="buttonLibrary" id="runButton2" type="run" onclick="resetParam()" title="Fullscreen">Reset</button> -->
+            </div>
+            
+    </div>
+
+</body>
+</html>
