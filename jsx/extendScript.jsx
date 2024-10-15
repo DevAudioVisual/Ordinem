@@ -103,6 +103,7 @@ importBrutes: function(){
 				var vanillaSequence = app.project.activeSequence;
 				var qeSequence = qe.project.getActiveSequence();
 				qeSequence.removeAudioTrack(2);
+				qeSequence.removeAudioTrack(1);
 			}
 			function delVideo(){
 				app.enableQE();
@@ -110,6 +111,7 @@ importBrutes: function(){
 				var qeSequence = qe.project.getActiveSequence();
 				var qtasFaixas = vanillaSequence.videoTracks.numTracks;
 				qeSequence.removeVideoTrack(2);
+				qeSequence.removeVideoTrack(1);
 		
 			}
 
